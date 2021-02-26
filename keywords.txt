@@ -1,0 +1,8 @@
+DCMotor KEYWORD1
+pinInit KEYWORD2
+turnFastStop    KEYWORD2
+turnFreeStop    KEYWORD2
+rightFast   KEYWORD2
+leftFast    KEYWORD2
+rightFree   KEYWORD2
+leftFree    KEYWORD2
