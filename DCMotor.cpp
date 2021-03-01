@@ -39,13 +39,13 @@ void DCMotor::turnFastStop( int dir, int sec ) {
     lowPin = this->rPin;
   }
 
-  pinMode(this->enPin, HIGH);
-  pinMode(highPin, HIGH);
-  pinMode(lowPin, LOW);
+  digitalWrite(this->enPin, HIGH);
+  digitalWrite(highPin, HIGH);
+  digitalWrite(lowPin, LOW);
 
   delay(sec * 1000);
 
-  pinMode(highPin, LOW);
+  digitalWrite(highPin, LOW);
 }
 
 void DCMotor::turnFreeStop( int dir, int sec, int del ) {
@@ -62,18 +62,18 @@ void DCMotor::turnFreeStop( int dir, int sec, int del ) {
     lowPin = this->rPin;
   }
 
-  pinMode(this->enPin, HIGH);
-  pinMode(highPin, HIGH);
-  pinMode(lowPin, LOW);
+  digitalWrite(this->enPin, HIGH);
+  digitalWrite(highPin, HIGH);
+  digitalWrite(lowPin, LOW);
 
   delay(sec * 1000);
 
-  pinMode(this->enPin, LOW);
-  pinMode(highPin, LOW);
+  digitalWrite(this->enPin, LOW);
+  digitalWrite(highPin, LOW);
 
   delay(del * 1000);
 
-  pinMode(this->enPin, HIGH);
+  digitalWrite(this->enPin, HIGH);
 }
 
 void DCMotor::rightFast( int sec ) {
