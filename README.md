@@ -15,3 +15,4 @@ Things to do:
 - [ ] Add functions that can change which pins are being used after initialization.
 - [ ] Add a safeguard to prevent two outputs being assigned to the same pin.
 - [ ] Create a function that swaps directionality instead of having right and left directions being hard coded.
+- [ ] Create generic functions that start the motor turning in a direction and stop it in separate function calls.
